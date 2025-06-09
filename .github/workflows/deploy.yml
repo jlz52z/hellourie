@@ -38,10 +38,10 @@ jobs:
           # Hugo 的 hugo.toml 文件会通过 os.Getenv 读取这些变量
           GITALK_CLIENT_ID: ${{ secrets.GITALK_CLIENT_ID }}
           GITALK_CLIENT_SECRET: ${{ secrets.GITALK_CLIENT_SECRET }}
-        run: /
+        run: |
           sed -i "s/__GITALK_CLIENT_ID__/${GITALK_CLIENT_ID}/g" hugo.toml
           sed -i "s/__GITALK_CLIENT_SECRET__/${GITALK_CLIENT_SECRET}/g" hugo.toml
-          hugo --minify # --minify 用于压缩 HTML, CSS, JS 等文件，减小体积
+          hugo --minify 
         
 
       - name: Deploy to Server via Rsync
