@@ -59,11 +59,11 @@ function helloWorld() {
 
 > 这是一个引用块。 它应该能被正确渲染。
 
-[[2025-06-09-share-note | shared note]]
+[ shared note](2025-06-09-share-note.md)
 
 
 test
-- [[/content/post/2025-06-09-share-note|2025-06-09-share-note]]
-- [[2025-06-09-envelop-test|2025-06-09-envelop-test]]
+- [2025-06-09-share-note](/post/content/post/2025-06-09-share-note.md)
+- [2025-06-09-envelop-test](2025-06-09-envelop-test.md)
 
 
