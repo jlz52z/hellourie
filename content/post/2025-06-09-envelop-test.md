@@ -63,7 +63,7 @@ function helloWorld() {
 
 
 test
-- [2025-06-09-share-note]({{< relref "/content/post/2025-06-09-share-note.md" >}})
+- [2025-06-09-share-note]({{< relref "./2025-06-09-share-note.md" >}})
 - [2025-06-09-envelop-test]({{< relref "2025-06-09-envelop-test.md" >}})
 
 
