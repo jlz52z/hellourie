@@ -40,24 +40,24 @@ jobs:
           GITALK_CLIENT_SECRET: ${{ secrets.GITALK_CLIENT_SECRET }}
         run: hugo --minify # --minify 用于压缩 HTML, CSS, JS 等文件，减小体积
 
-      # 第四步：部署到服务器
-      # 使用 rsync 将 public 目录的内容同步到你的云服务器
       - name: Deploy to Server via Rsync
         uses: burnett01/rsync-deployments@6.0.0
         with:
           # -a: 归档模式, 相当于 -rlptgoD, 保持文件原有属性
           # -v: 详细模式, 显示传输过程
           # -z: 压缩传输
-          # -r: 递归同步
+          # -r: 递归同步 (其实 -a 已经包含了 -r)
           # --delete: 删除服务器上存在但本地 public 目录中不存在的文件，保持完全同步
-          # -e 'ssh -p ...': 指定 rsync 使用的 SSH 端口，这是非标准端口的关键
-          switches: -avzr --delete -e 'ssh -p ${{ secrets.SSH_PORT }}'
+          switches: -avz --delete  # <-- 移除 -e '...' 部分，保持简洁
           
           # 本地源路径：hugo 构建好的 public 目录
           path: public/
           
           # 远程服务器配置：从 GitHub Secrets 中读取
-          remote_path: ${{ secrets.TARGET_DIR }}      # 服务器上网站的根目录，例如 /var/www/myblog
-          remote_host: ${{ secrets.SSH_HOST }}        # 服务器的 IP 地址或域名
-          remote_user: ${{ secrets.SSH_USER }}        # 登录服务器的用户名
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}  # 用于登录服务器的 SSH 私钥
+          remote_path: ${{ secrets.TARGET_DIR }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # 关键在这里！使用专门的参数来指定端口
+          remote_port: ${{ secrets.SSH_PORT }}
