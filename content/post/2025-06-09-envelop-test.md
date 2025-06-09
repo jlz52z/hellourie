@@ -59,11 +59,11 @@ function helloWorld() {
 
 > 这是一个引用块。 它应该能被正确渲染。
 
-/[ shared note]({{< relref "2025-06-09-share-note.md" >}})/
+[ shared note]({{< relref "2025-06-09-share-note.md" >}})
 
 
 test
-- /[2025-06-09-share-note]({{< relref "/content/post/2025-06-09-share-note.md" >}})/
-- /[2025-06-09-envelop-test]({{< relref "2025-06-09-envelop-test.md" >}})/
+- [2025-06-09-share-note]({{< relref "/content/post/2025-06-09-share-note.md" >}})
+- [2025-06-09-envelop-test]({{< relref "2025-06-09-envelop-test.md" >}})
 
 
