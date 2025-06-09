@@ -14,8 +14,8 @@ cover:
  image: ""
 slug: 2025-06-09-envelop-test
 dir: post
-comment: false
-toc: false
+comment: true
+toc: true
 autoCollapseToc: false
 postMetaInFooter: false
 hiddenFromHomePage: false
@@ -33,7 +33,11 @@ sequenceDiagrams:
   enable: false
   options: ""
 ---
+# hell
 
+
+
+### asdf
 # Enveloppe 插件功能测试笔记
 
 这是一篇专门用于测试 `obsidian-enveloppe` 插件功能的笔记。它的 `share` 属性被设置为 `true`，所以它应该会被发布到你的 Hugo 网站。
@@ -59,7 +63,7 @@ function helloWorld() {
 
 
 test
-- [2025-06-09-share-note](./2025-06-09-share-note.md)
+- [2025-06-09-share-note](/content/post/2025-06-09-share-note.md)
 - [2025-06-09-envelop-test](2025-06-09-envelop-test.md)
 
 
