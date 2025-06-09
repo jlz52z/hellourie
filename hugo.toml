@@ -151,8 +151,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = "jlz52z"              # Your GitHub ID
     repo = "hellourie"               # The repo to store comments
-    clientID = os.Getenv "GITALK_CLIENT_ID"
-    clientSecret = os.Getenv "GITALK_CLIENT_SECRET"
+    clientID = "__GITALK_CLIENT_ID__"
+    clientSecret = "__GITALK_CLIENT_SECRET__"
   # Valine.
   # You can get your appid and appkey from https://leancloud.cn
   # more info please open https://valine.js.org
