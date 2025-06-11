@@ -1,7 +1,6 @@
 ---
 title: "{{ replaceRE `^\\d{4}-\\d{2}-\\d{2}-` "" .TranslationBaseName | replace "-" " " | title }}"
 date: {{ .Date }}
-lastmod: {{ .Date }}
 draft: true
 share: false
 keywords: []
