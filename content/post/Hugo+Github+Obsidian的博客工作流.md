@@ -254,6 +254,12 @@ jobs:
         "replace": "cover:\\n image",
         "flags": "",
         "after": true
+      },
+      {
+        "entry": "/\[todo::[^\]]+?\]/",
+        "replace": "",
+        "flags": "",
+        "after": true
       }
     ],
     "tags": {
@@ -316,3 +322,6 @@ jobs:
 - [2025-06-10-Hugo+Github+Obsidian的博客工作流]({{< relref "Hugo+Github+Obsidian%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81.md" >}}): [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support)
 
 
+# 本文参考
+
+- [Enveloppe 插件适配 Hugo 的配置](https://www.printlove.cn/github-publisher-hugo/)

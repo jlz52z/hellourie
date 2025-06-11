@@ -16,10 +16,10 @@ dir: "post" # 搭配 Enveloppe 插件设置文章上传的目录
 comment: true
 toc: true
 autoCollapseToc: false
-postMetaInFooter: false
+postMetaInFooter: true
 hiddenFromHomePage: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: true
+contentCopyright: false
 reward: false
 mathjax: false
 mathjaxEnableSingleDollar: false
@@ -52,11 +52,9 @@ sequenceDiagrams:
 
 
 
-# TODO List
+{{< info >}}以下为仍待施工的博客内容{{< /info >}}
+
 ```dataview
-TASK                                  
-WHERE !completed   AND !draft                  
-GROUP BY file.link                   
-SORT file.name ASC, line ASC          
+LIST todo WHERE todo != null and share  and !draft      
 ```
 
