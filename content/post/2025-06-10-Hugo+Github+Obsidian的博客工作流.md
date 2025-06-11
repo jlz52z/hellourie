@@ -98,7 +98,7 @@ cp themes/even/config.toml ./hugo.toml
 
 > **注意:** 对于这个主题，你应该使用 **post** 而不是 **posts**，即 `hugo new post/some-content.md`
 
- - [ ] [多语言支持]({{< relref "https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support" >}}) [status:: TODO]
+ - [ ] [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support) [status:: TODO]
 
 
 # GitHub 同步推送至服务器
@@ -237,7 +237,7 @@ jobs:
     "dataview": true,
     "censorText": [
       {
-        "entry": "/\\[(.*?)\\]\\((.*?\\.md(?:#.*?)?)\\)/",
+        "entry": "/\[(.*?)\]\((?!https?:\/\/|\/)(.*?\.md(?:#.*?)?)\)/",
         "replace": "[$1]({{< relref \"$2\" >}})",
         "flags": "",
         "after": true
@@ -309,5 +309,5 @@ jobs:
 # TODO List
 # [2025-06-10-Hugo+Github+Obsidian的博客工作流]({{< relref "2025-06-10-Hugo+Github+Obsidian%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81.md" >}})
 
-    - [ ] [多语言支持]({{< relref "https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support" >}}) [status:: TODO]
+    - [ ] [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support) [status:: TODO]
 
