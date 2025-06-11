@@ -255,7 +255,7 @@ jobs:
         "after": true
       },
       {
-        "entry": "/\[TODO::[^\]]+?\]/",
+        "entry": "/\[TODO::.*?\]/",
         "replace": "",
         "flags": "",
         "after": true
