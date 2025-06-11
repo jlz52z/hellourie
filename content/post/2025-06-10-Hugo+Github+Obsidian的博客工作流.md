@@ -237,12 +237,6 @@ jobs:
     "dataview": true,
     "censorText": [
       {
-        "entry": "/\[(.*?)\]\((?!https?:\/\/|\/)(.*?\.md(?:#.*?)?)\)/",
-        "replace": "[$1]({{< relref \"$2\" >}})",
-        "flags": "",
-        "after": true
-      },
-      {
         "entry": "fm=jpg",
         "replace": "auto=format",
         "flags": "",
