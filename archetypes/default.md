@@ -46,3 +46,18 @@ sequenceDiagrams:
 
 
 <!--more-->
+
+
+
+
+
+
+
+# TODO List
+```dataview
+TASK                                  
+WHERE !completed   AND !draft                  
+GROUP BY file.link                   
+SORT file.name ASC, line ASC          
+```
+
