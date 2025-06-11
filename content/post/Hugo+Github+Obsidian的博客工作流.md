@@ -98,7 +98,7 @@ cp themes/even/config.toml ./hugo.toml
 > **注意:** 对于这个主题，你应该使用 **post** 而不是 **posts**，即 `hugo new post/some-content.md`
 
 
-[TODO::  [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support)]
+(https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support)]
 
 
 # GitHub 同步推送至服务器
@@ -255,7 +255,7 @@ jobs:
         "after": true
       },
       {
-        "entry": "/\[todo::[^\]]+?\]/",
+        "entry": "/\[TODO::[^\]]+?\]/",
         "replace": "",
         "flags": "",
         "after": true
