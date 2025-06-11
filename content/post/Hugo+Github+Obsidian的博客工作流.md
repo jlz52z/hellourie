@@ -21,7 +21,7 @@ categories:
   - 折腾
 author: urie
 cover:
- image: 
+  image: 
 slug: 2025-06-10-Hugo+Github+Obsidian的博客工作流
 dir: post
 comment: true
@@ -319,7 +319,7 @@ jobs:
 
 {{< info >}}以下为仍待施工的博客内容{{< /info >}}
 
-- [2025-06-10-Hugo+Github+Obsidian的博客工作流]({{< relref "Hugo+Github+Obsidian%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81.md" >}}): [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support)
+- [2025-06-10-Hugo+Github+Obsidian的博客工作流]({{< relref "{{< relref "Hugo+Github+Obsidian%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81.md" >}}): [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support" >}})
 
 
 # 本文参考
