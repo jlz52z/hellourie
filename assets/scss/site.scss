@@ -1,0 +1,4 @@
+/* assets/scss/site.scss —— 站点自己的入口 */
+@use "sass/main" as even;      // 加载主题（even）的主样式
+@use "shortcodes/info" as *;   // 加载并暴露 info 里的变量/混入（或改成 @import 也行）
+

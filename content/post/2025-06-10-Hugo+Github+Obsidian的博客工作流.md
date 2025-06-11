@@ -20,8 +20,7 @@ tags:
 categories:
   - 折腾
 author: urie
-cover:
- image: 
+cover.image: 
 slug: 2025-06-10-Hugo+Github+Obsidian的博客工作流
 dir: post
 comment: true
@@ -29,7 +28,7 @@ toc: true
 autoCollapseToc: false
 postMetaInFooter: false
 hiddenFromHomePage: false
-contentCopyright: false
+contentCopyright: true
 reward: false
 mathjax: false
 mathjaxEnableSingleDollar: false
@@ -98,7 +97,8 @@ cp themes/even/config.toml ./hugo.toml
 
 > **注意:** 对于这个主题，你应该使用 **post** 而不是 **posts**，即 `hugo new post/some-content.md`
 
- - [ ] [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support) [status:: TODO]
+
+[TODO::  [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support)]
 
 
 # GitHub 同步推送至服务器
@@ -212,8 +212,8 @@ jobs:
     "rootFolder": "",
     "yamlFolderKey": "",
     "frontmatterTitle": {
-      "enable": false,
-      "key": "title"
+      "enable": true,
+      "key": "dir"
     },
     "replaceTitle": [],
     "replacePath": [],
@@ -236,6 +236,12 @@ jobs:
     "hardbreak": false,
     "dataview": true,
     "censorText": [
+      {
+        "entry": "/\\[(.*?)\\]\\((?!https?:\\/\\/|\\/)(.*?\\.md(?:#.*?)?)\\)/",
+        "replace": "[$1]({把我删掉{< relref \"$2\" >}})",
+        "flags": "",
+        "after": true
+      },
       {
         "entry": "fm=jpg",
         "replace": "auto=format",
@@ -295,13 +301,19 @@ jobs:
 }
 ```
 
+> 请把上面的json配置文件中`conversion.censorText[0].replace`中的“把我删掉”这四个字删掉
+
 
 
 `QuickAdd`脚本可以在[GitHub仓库](https://github.com/jlz52z/hellourie/blob/main/obs_sctipts/NewBlog.js)中查看
 
 
-# TODO List
-# [2025-06-10-Hugo+Github+Obsidian的博客工作流]({{< relref "2025-06-10-Hugo+Github+Obsidian%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81.md" >}})
 
-    - [ ] [多语言支持](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#language-support) [status:: TODO]
 
+{{< info >}}以下为仍待施工的博客内容{{< /info >}}
+
+```dataview
+
+LIST TODO WHERE TODO != null and share and !draft 
+
+```

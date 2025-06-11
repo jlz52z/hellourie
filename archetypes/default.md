@@ -13,13 +13,13 @@ slug: "{{ .TranslationBaseName }}"
 dir: "post" # 搭配 Enveloppe 插件设置文章上传的目录
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
-toc: false
+comment: true
+toc: true
 autoCollapseToc: false
 postMetaInFooter: false
 hiddenFromHomePage: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: false
+contentCopyright: true
 reward: false
 mathjax: false
 mathjaxEnableSingleDollar: false
