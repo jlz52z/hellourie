@@ -11,7 +11,7 @@ on:
 jobs:
   build-and-deploy:
     # 运行环境：使用最新的 Ubuntu 系统
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # 第一步：检出代码
